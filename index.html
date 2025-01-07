@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A Saúde Começa com uma Alimentação Saudável</title>
+</head>
+<body>
+    <header>
+        <h1>A Saúde Começa com uma Alimentação Saudável</h1>
+        <p>Descubra como bons hábitos alimentares podem transformar sua saúde!</p>
+    </header>
+
+    <main>
+        <section id="habitos">
+            <h2>Bons Hábitos Alimentares</h2>
+            <div class="habitos-container">
+                <div class="habito">
+                    <img src="img/Verduras-e-legumes.jpg" alt="Verduras e legumes">
+                    <p>Inclua mais verduras e legumes na sua alimentação diária.</p>
+                </div>
+                <div class="habito">
+                    <img src="img/Beber-água.jpg" alt="Beber água">
+                    <p>Mantenha-se hidratado: beba pelo menos 2 litros de água por dia.</p>
+                </div>
+                <div class="habito">
+                    <img src="img/Cereais-integrais.jpg" alt="Cereais integrais">
+                    <p>Prefira cereais integrais e evite alimentos ultraprocessados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculadora">
+            <h2>Calculadora de IMC</h2>
+            <p>Calcule seu Índice de Massa Corporal e veja como está sua saúde.</p>
+            <form id="imc-form">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" required>
+                <label for="altura">Altura (m):</label>
+                <input type="number" step="0.01" id="altura" required>
+                <button type="button" onclick="calcularIMC()">Calcular</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Campanha promovida pela Prefeitura de Fortaleza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
